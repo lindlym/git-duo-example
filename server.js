@@ -11,10 +11,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors());
 
-app.use('/', (req, res) => {
-  res.send('YOOOOOOOOOO MERGE CONFLICTS');
+app.get('/', (req, res) => {
+  res.status(200).send('ok')
 });
 
 app.listen(PORT, () => {
   console.log(`Listening on localhost:${PORT}...`);
 });
+
+ <React.Fragment>
+  <h1>
+      <p>
+        He
+        LLO
+      </p>
+  </h1>
+ </React.Fragment>
