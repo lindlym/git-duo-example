@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors());
 
-app.get('/', (req, res) => {
-  res.status(200).send('Receiving data...');
+app.use('/', (req, res) => {
+  res.send('YOOOOOOOOOO MERGE CONFLICTS');
 });
 
 app.listen(PORT, () => {
