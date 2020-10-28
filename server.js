@@ -12,8 +12,7 @@ app.use(cookieParser());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.status(200);
-  res.send('Receiving data...');
+  res.status(200).send('Receiving data...');
 });
 
 app.listen(PORT, () => {
